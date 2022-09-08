@@ -9,4 +9,6 @@ app.use(cors());
 
 app.use(require('./routes/users'));
 
+app.use(require('./routes/product_route'));
+
 module.exports = app;
