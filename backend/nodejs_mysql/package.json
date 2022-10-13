@@ -1,23 +1,20 @@
 {
-  "name": "backend",
+  "name": "nodejs_mysql",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "faker": "^6.6.6",
-    "mongoose": "^6.5.4",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "@faker-js/faker": "^7.5.0"
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.0"
   }
 }
