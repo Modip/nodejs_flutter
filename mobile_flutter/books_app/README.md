@@ -1,4 +1,4 @@
-# books_app
+# Modip Books
 
 A new Flutter project.
 

@@ -15,12 +15,9 @@ class _HomePageState extends State<HomePage> {
     "Sous l'orage",
     "L'enfant Noir",
     "Le pagne noir",
-    "Une si longue lettre",
-    "Sous l'orage",
-    "L'enfant Noir",
-    "Une si longue lettre",
-    "L'enfant Noir",
-    "Le pagne noir",
+    "Nini mulatresse",
+    "Maimouna",
+    "Chant d'ombre",
     "Une si longue lettre",
     "Sous l'orage",
     "L'enfant Noir",
@@ -31,7 +28,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            appBar: AppBar(
+      appBar: AppBar(
         title: const Text("Modip Books"),
         centerTitle: true,
       ),
@@ -45,52 +42,7 @@ class _HomePageState extends State<HomePage> {
               child: ListTile(
                 title: Text(
                   data[index],
-                  style: TextStyle(fontSize: 20, color: Colors.white),
-                ),
-                trailing: Container(
-                  width: 60,
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: IconButton(
-                          onPressed: () {
-                            showDialog(
-                                context: context,
-                                builder: (context) => SimpleDialog(
-                                      children: [
-                                        TextField(
-                                          onChanged: (value) {
-                                            setState(() {
-                                              text = value;
-                                            });
-                                          },
-                                        ),
-                                        ElevatedButton(
-                                            onPressed: () {
-                                              setState(() {
-                                                data[index] = text;
-                                              });
-                                              Navigator.pop(context);
-                                            },
-                                            child: Text("Update"))
-                                      ],
-                                    ));
-                          },
-                          icon: Icon(Icons.edit),
-                        ),
-                      ),
-                      Expanded(
-                        child: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              data.removeAt(index);
-                            });
-                          },
-                          icon: Icon(Icons.delete),
-                        ),
-                      ),
-                    ],
-                  ),
+                  style: const TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:books_app/screens/addBoock_page.dart';
 import 'package:books_app/screens/home_page.dart';
+import 'package:books_app/screens/admin/allBook_page.dart';
 import 'package:books_app/screens/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -21,8 +22,8 @@ class _RoutePageState extends State<RoutePage> {
   @override
   Widget build(BuildContext context) {
     if (switchPage) {
-      return HomePage();
-      //return Login(togPage: togPage);
+      //return AllBook();
+      return Login(togPage: togPage);
     }
     return AddBook(togPage: togPage);
   }

@@ -16,32 +16,32 @@ class AddBook extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Icon(
+                const Icon(
                   Icons.menu_book,
                   color: Colors.blueGrey,
                   size: 50,
                 ),
-                SizedBox(height: 10),
-                Text(
+                const SizedBox(height: 10),
+                const Text(
                   "BOOKS APP",
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
                       color: Colors.blueGrey),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   "Bienvenue",
                   style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                       color: Colors.blueGrey),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   child: TextFormField(
                     style: TextStyle(
                         color: Theme.of(context).primaryColor,
@@ -50,21 +50,21 @@ class AddBook extends StatelessWidget {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20)),
-                      prefixIcon: Icon(
+                      prefixIcon: const Icon(
                         Icons.library_books,
                         size: 30,
                       ),
                       labelText: "Name",
                       labelStyle:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                          const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   child: TextFormField(
                     style: TextStyle(
                         color: Theme.of(context).primaryColor,
@@ -73,20 +73,20 @@ class AddBook extends StatelessWidget {
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20)),
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.category_outlined,
                           size: 30,
                         ),
                         labelText: "Catégory",
-                        labelStyle: TextStyle(
+                        labelStyle: const TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w600)),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   child: TextFormField(
                     style: TextStyle(
                         color: Theme.of(context).primaryColor,
@@ -95,16 +95,16 @@ class AddBook extends StatelessWidget {
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20)),
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.message,
                           size: 30,
                         ),
                         labelText: "Description",
-                        labelStyle: TextStyle(
+                        labelStyle: const TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w600)),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 SizedBox(
@@ -116,15 +116,15 @@ class AddBook extends StatelessWidget {
                     onPressed: () {},
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
-                    child: Text("Valider"),
+                    child: const Text("Valider"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [Text("Liste des livres")],
+                  children: const [Text("Liste des livres")],
                 ),
               ],
             ),
