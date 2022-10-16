@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const booKController = require("../controllers/userController.js");
+const userController = require("../controllers/userController.js");
 
 //with Sequelize
-router.post('/addUser', booKController.addUser)
-router.get('/allUsers', booKController.getAllUsers)
+router.post('/addUser', userController.addUser)
+router.get('/allUsers', userController.getAllUsers)
+router.post('/login', userController.loginUser)
 
 
 
